@@ -3546,7 +3546,7 @@ TEST_P(Capstone2LlvmIrTranslatorX86Tests, X86_INS_IMUL_r16)
 	EXPECT_JUST_REGISTERS_STORED({
 		{X86_REG_AX, 0x0960},
 		{X86_REG_DX, 0x0000},
-		{X86_REG_OF, false},
+		{X86_REG_OF, true},
 		{X86_REG_CF, false},
 	});
 	EXPECT_NO_MEMORY_LOADED_STORED();

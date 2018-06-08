@@ -45,7 +45,7 @@ TEST_F(GccDemanglerTests, DoNotDemangleCppClassNamesWhenCharacterCountIsBad)
 {
 	DEM_EQ("0Polygon", "");
 	DEM_EQ("6Polygon", "");
-	DEM_EQ("8Polygon", "");
+	DEM_EQ("whatever", "");
 }
 
 TEST_F(GccDemanglerTests, DoNotDemangleCppClassNamesWhenTheyDoNotMatchRegex)

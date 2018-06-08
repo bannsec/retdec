@@ -43,7 +43,7 @@ DataInitializationWorks) {
 	DynamicBuffer buffer(data);
 
 	EXPECT_EQ(4, buffer.getCapacity());
-	EXPECT_EQ(4, buffer.getRealDataSize());
+	EXPECT_EQ(10, buffer.getRealDataSize());
 }
 
 TEST_F(DynamicBufferTests,
