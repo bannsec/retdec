@@ -1,3 +1,16 @@
+# Oneliner
+Here's a useful bash function that will simplify using retdec.
+
+```bash
+function retdec() { sudo docker run -it --rm -v $PWD:/mount bannsec/retdec bash -c "cd /mount; retdec-decompiler.sh $@";}
+```
+
+Just source the function then call it like you were calling retdec directly:
+
+```bash
+retdec myfile.exe
+```
+
 # RetDec
 
 [![Travis CI build status](https://travis-ci.org/avast-tl/retdec.svg?branch=master)](https://travis-ci.org/avast-tl/retdec)
